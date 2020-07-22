@@ -10,7 +10,7 @@ Modern energy meters provide all the information needed to simulate different ba
 
 E.g. the plot below shows how much of the energy that you are currently dawing from the gird could be provided by a battery.
 
-![Image:Energy used from grid and battery by battery size](./Energy_used_from_grid_and_battery_by_battery_size  "Energy used from grid and battery by battery size")
+![Image:Energy used from grid and battery by battery size](./Energy_used_from_grid_and_battery_by_battery_size.png  "Energy used from grid and battery by battery size")
 
 Besides other more detailed analyses you can for example see how much energy each battery could provide during differnent months of the year.
 
@@ -73,7 +73,7 @@ In the notebook the following analyses are done:
 
 This summary shows how much of the enerty that you are currently dawing from the grid could be provided by batteries of different sizes. It also shows how energy you still have to draw from the grid when using these batteries.
 
-![Image:Energy used from grid and battery by battery size](./Energy_used_from_grid_and_battery_by_battery_size  "Energy used from grid and battery by battery size")
+![Image:Energy used from grid and battery by battery size](./Energy_used_from_grid_and_battery_by_battery_size.png  "Energy used from grid and battery by battery size")
 
 More details are given in the monthly overview. Herein, the energy is shwon that a battery could provide during each month of the year. This helps to estimate seasonal effects.
 
