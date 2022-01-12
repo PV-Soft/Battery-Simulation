@@ -4,7 +4,7 @@ This software simulates batteries for your PV system and calculates how much you
 
 ## Introduction
 
-On sunny days your PV system usually gives the excess energy that you cannot use at home to the grid, while you have to draw energy from the grid on cloudy days (and at night). Your own consumption can be increased by adding a battery to your PV system. The size of the battery (and inverter) heavily depends on the setup of you PV system and especially on your personal power consumption profile.
+On sunny days your PV system usually gives the excess energy that you cannot use at home to the grid, while you have to draw energy from the grid on cloudy days (and at night). Your own consumption can be increased by adding a battery to your PV system. The size of the battery (and inverter) heavily depends on the setup of your PV system and especially on your personal power consumption profile.
 
 Modern energy meters provide all the information needed to simulate different batteries and inverters for your personal needs. This software uses this data to find out which combination best fits your needs and assists you in your buying decision.
 
@@ -24,7 +24,7 @@ As the plots are created based on your personal power data, the decisions you ma
 
 Digital energy meters often contain an IR interface that continuously sends the current power consumption.
 
-The provided power value is positive if you draw energy from the grid and negative if the excess of you PV system is fed into the grid.
+The provided power value is positive if you draw energy from the grid and negative if the excess of your PV system is fed into the grid.
 
 To record this data for later analysis, a IR reader is needed. A simple version for a smart meter IR reader can be found here: 
 https://wiki.volkszaehler.org/howto/simpler_ir_leser
