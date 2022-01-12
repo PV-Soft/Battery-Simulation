@@ -2,7 +2,7 @@
  
 This software simulates batteries for your PV system and calculates how much you could increase your own consumption. All calculations are done using your individual power consumption profile, as well as the specific power generation profile of your PV system.
 
-All calculations are done in `Simulate_Battery.ipynb`
+All calculations are done in [Simulate_Battery.ipynb](Simulate_Battery.ipynb)
 
 ## Introduction
 
