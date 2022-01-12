@@ -2,6 +2,8 @@
  
 This software simulates batteries for your PV system and calculates how much you could increase your own consumption. All calculations are done using your individual power consumption profile, as well as the specific power generation profile of your PV system.
 
+All calculations are done in `Simulate_Battery.ipynb`
+
 ## Introduction
 
 On sunny days your PV system usually gives the excess energy that you cannot use at home to the grid, while you have to draw energy from the grid on cloudy days (and at night). Your own consumption can be increased by adding a battery to your PV system. The size of the battery (and inverter) heavily depends on the setup of your PV system and especially on your personal power consumption profile.
