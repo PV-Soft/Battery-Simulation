@@ -1,0 +1,6 @@
+jupyterlab
+pandas
+matplotlib
+
+# For exporting data from openhab:
+influxdb
