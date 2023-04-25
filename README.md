@@ -45,21 +45,13 @@ Different software can be used to read the data from the serial interface. If yo
 
 If you are not using a home automation system yet, you can run a simple python script to record the data.
 
-In both cases the data has to be recorded for a "representative" time frame to allow meaningful a analysis. As the power data contains both, information about the power you are drawing and the power your PV system is feeding to the grid, a period of several month is reasonable to cover also seasonal effects. Of cause, you can already run the analysis after a much shorter time to see first results!
+In both cases the data has to be recorded for a "representative" time frame to allow meaningful a analysis. A period of several month is reasonable to cover seasonal effects. Of course, you can already run the analysis after a much shorter time to see first results!
 
 #### Openhab
 
-The data can be read and stored e.g. using a home automation software like [openhab](https://www.openhab.org/)  by intalling the appropriate binding ([openhab SmartMeter Binding](https://www.openhab.org/addons/bindings/smartmeter/) ) and persinsting the data for later analysis. The configuration also allows to specify how many values should be stored (e.g. ever 5 seconds).
+The data can be read and stored e.g. using a home automation software like [openhab](https://www.openhab.org/)  by installing the appropriate binding ([openhab SmartMeter Binding](https://www.openhab.org/addons/bindings/smartmeter/) ) and persisting the data for later analysis. The configuration also allows to specify how many values should be stored (e.g. ever 5 seconds).
 
-Once enough data is persisted in openhab it can be exported from the influxdb database. The following shell command stores all measurements of the item `Strom_Leistung_Gesamt` (containing your power data) into a text file. The time frame of the export has to be adjusted according the the time period of the recoding. However, too long time periods (> 3 month) might lead to errors during the export.
- 
-	curl -G http://localhost:8086/query?db=openhab_db -u grafana:PASSWORD --data-urlencode "q=SELECT * FROM Strom_Leistung_Gesamt WHERE time > '2020-04-01T00:00:00Z' AND time < '2020-06-01T00:00:00Z'" > resultAprilMai.json
-
-#### Copy Data from Openhab Server
-
-Run the following command on the PC where you will do the analysis of the data. After providing the password for the `openhab` user, it exports the above created json file and stores it in the current directory. (Notice the "." at the end of the command).
-
-	scp openhabian@OPENHAB_IP:/home/openhabian/resultAprilMai.json .
+Once enough data is persisted in openhab it can be exported from the influxdb database. See [Export_openhab_data_from_influxdb.ipynb](./data_exporters/openhab_influxdb/Export_openhab_data_from_influxdb.ipynb) for details.
 
 #### Record Data with Python Script
 
