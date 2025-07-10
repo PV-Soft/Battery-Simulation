@@ -1,6 +1,8 @@
 jupyterlab
 pandas
 matplotlib
+plotly
+nbformat
 
 # For exporting data from openhab:
 influxdb
